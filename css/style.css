@@ -1,0 +1,44 @@
+header {
+    background-image: url(/images/Rectangle\ 57.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header::after {
+    position: absolute;
+    content: "";
+    background-image: url(/images/soccer-goal-top-png-8\ 4.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: 0;
+    width: 479px;
+    height: 335px;
+}
+
+img.header-left-img {
+    position: relative;
+    top: 50px;
+}
+
+.header-title {
+    font-family: Berkshire Swash;
+}
+
+main,
+footer {
+    background: #151515;
+}
+
+.player-section {
+    width: 75%;
+}
+
+.player-sidebar {
+    width: 25%;
+}
+
+hr{
+    background-color: #717171;
+}
