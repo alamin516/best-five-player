@@ -35,8 +35,13 @@ footer {
     width: 75%;
 }
 
+.single-palyer{
+    height: 324.6px;
+}
+
 .player-sidebar {
     width: 25%;
+    overflow: hidden;
 }
 
 hr{
