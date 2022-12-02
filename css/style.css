@@ -1,5 +1,5 @@
 header {
-    background-image: url(/images/Rectangle\ 57.png);
+    background-image: url(../images/Rectangle\ 57.png);
     background-position: right bottom;
     background-repeat: no-repeat;
     position: relative;
@@ -8,7 +8,7 @@ header {
 header::after {
     position: absolute;
     content: "";
-    background-image: url(/images/soccer-goal-top-png-8\ 4.png);
+    background-image: url(../images/soccer-goal-top-png-8\ 4.png);
     background-position: right bottom;
     background-repeat: no-repeat;
     right: 0;
@@ -31,19 +31,42 @@ footer {
     background: #151515;
 }
 
-.player-section {
+/* .player-section {
     width: 75%;
-}
+} */
 
-.single-palyer{
+/* .single-palyer{
     height: 324.6px;
-}
+} */
 
-.player-sidebar {
+/* .player-sidebar {
     width: 25%;
     overflow: hidden;
-}
+} */
 
 hr{
     background-color: #717171;
 }
+
+
+@media screen and (max-width: 480px) {
+    header {
+        background-image: url(../images/Rectangle\ 57.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    
+    header::after {
+        position: absolute;
+        content: "";
+        background-image: url(../images/soccer-goal-top-png-8\ 4.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        right: 0;
+        top: 0;
+        width: 479px;
+        height: 335px;
+    }
+    
+  }

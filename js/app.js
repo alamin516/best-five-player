@@ -16,10 +16,11 @@ function playerAdded(){
 }
 
 function selectPlayer(addPlayer){
-    const playerName = addPlayer.parentNode.children[0].innerText;
+    const playerName = addPlayer.parentNode.children[0].innerText
+    console.log(playerName)
     if(selectedName.length < 5){
         selectedName.push(playerName);
-        addPlayer.disabled.true;
+        addPlayer.disabled = true;
     }
     else{
         alert("Sorry! You can't add more then 5");

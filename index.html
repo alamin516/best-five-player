@@ -15,12 +15,17 @@
 <body>
     <header class="bg-black w-full py-8">
         <section class="flex items-center">
-            <div class="w-3/12 items-end">
-                <img class="header-left-img" src="/images/Group 12.png" alt="">
+            <div class="w-3/12 items-end hidden lg:block">
+                <img class="header-left-img" src="images/Group 12.png" alt="">
             </div>
-            <div class="w-8/12 text-center items-center">
+            <div class="lg:w-8/12 w-full text-center items-center z-10">
                 <div>
-                    <h1 class="text-7xl header-title text-orange-600">Select Your Best Five</h1>
+                    <div class="w-full block lg:hidden ">
+                        <div class="header-right ">
+                            <img class="w-60 h-64 mx-auto" src="images/Card-psg.png" alt="">
+                        </div>
+                    </div>
+                    <h1 class="lg:text-7xl text-3xl header-title text-orange-600">Select Your Best Five</h1>
                     <div class="text-right">
                         <img class="text-right inline " src="images/Line Marker.png" alt="">
                     </div>
@@ -33,20 +38,20 @@
                         assists</p>
                 </div>
             </div>
-            <div class="w-3/12">
+            <div class="w-3/12 hidden lg:block">
                 <div class="header-right">
-                    <img class="w-40 h-44" src="/images/Card-psg.png" alt="">
-
+                    <img class="w-40 h-44" src="images/Card-psg.png" alt="">
                 </div>
             </div>
 
         </section>
     </header>
     <main>
-        <section class="w-9/12 mx-auto pb-12">
-            <div class="flex gap-4 py-12">
-                <div class="player-section grid grid-cols-3 gap-4">
-                    <div class="single-palyer text-white border border-gray-800">
+        <section class="lg:w-9/12 w-11/12 mx-auto py-12">
+            <h2 class="text-2xl text-white font-bold pb-4">Choose your favourite player</h2>
+            <div class="lg:flex gap-6">
+                <div class="player-section grid lg:grid-cols-3 grid-cols-1 gap-6 w-full lg:mb-0 mb-10">
+                    <div class="single-palyer rounded-lg text-white border border-gray-800">
                         <img class="w-full" src="images/Rectangle 144.png" alt="">
                         <div class="p-4 text-center bg-black">
                             <h3 class="player-name text-center text-2xl mb-3">Lionel Messi</h3>
@@ -62,7 +67,7 @@
                             <button onclick="selectPlayer(this)" class="btn bg-blue-800 py-2 select-btn cursor-pointer w-full" >Select</button>
                         </div>
                     </div>
-                    <div class="single-palyer text-white border border-gray-800">
+                    <div class="single-palyer rounded-lg text-white border border-gray-800">
                         <img class="w-full" src="images/Rectangle 144 (1).png" alt="">
                         <div class="p-4 text-center bg-black">
                             <h3 class="player-name text-center text-2xl mb-3">Neymar Jr</h3>
@@ -78,7 +83,7 @@
                             <button onclick="selectPlayer(this)" class="btn bg-blue-800 py-2 select-btn cursor-pointer w-full" >Select</button>
                         </div>
                     </div>
-                    <div class="single-palyer text-white border border-gray-800">
+                    <div class="single-palyer rounded-lg text-white border border-gray-800">
                         <img class="w-full" src="images/Rectangle 144 (2).png" alt="">
                         <div class="p-4 text-center bg-black">
                             <h3 class="player-name text-center text-2xl mb-3">Kylian Mbappé</h3>
@@ -94,7 +99,7 @@
                             <button onclick="selectPlayer(this)" class="btn bg-blue-800 py-2 select-btn cursor-pointer w-full">Select</button>
                         </div>
                     </div>
-                    <div class="single-palyer text-white border border-gray-800">
+                    <div class="single-palyer rounded-lg text-white border border-gray-800">
                         <img class="w-full" src="images/Rectangle 144 (3).png" alt="">
                         <div class="p-4 text-center bg-black">
                             <h3 class="player-name text-center text-2xl mb-3">Vítor Machado</h3>
@@ -110,7 +115,7 @@
                             <button onclick="selectPlayer(this)" class="btn bg-blue-800 py-2 select-btn cursor-pointer w-full" >Select</button>
                         </div>
                     </div>
-                    <div class="single-palyer text-white border border-gray-800">
+                    <div class="single-palyer rounded-lg text-white border border-gray-800">
                         <img class="w-full" src="images/Rectangle 144 (4).png" alt="">
                         <div class="p-4 text-center bg-black">
                             <h3 class="player-name text-center text-2xl mb-3">Sergio Ramos</h3>
@@ -126,7 +131,7 @@
                             <button onclick="selectPlayer(this)" class="btn bg-blue-800 py-2 select-btn cursor-pointer w-full" >Select</button>
                         </div>
                     </div>
-                    <div class="single-palyer text-white border border-gray-800">
+                    <div class="single-palyer rounded-lg text-white border border-gray-800">
                         <img class="w-full" src="images/Rectangle 144 (5).png" alt="">
                         <div class="p-4 text-center bg-black">
                             <h3 class="player-name text-center text-2xl mb-3">Renato Sanches</h3>
@@ -143,8 +148,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="player-sidebar text-white grid grid-cols-1  gap-4">
-                    <div class="bg-black w-full py-6 px-7 h-auto">
+                <div class="player-sidebar text-white grid grid-cols-1 gap-4">
+                    <div class="bg-black w-full py-6 px-7 ">
                         <div class="text-center">
                             <h1 class="text-2xl ">Selected - V</h1>
                             <img class="inline" src="images/Ureg-Ureg Marker.png" alt="">
